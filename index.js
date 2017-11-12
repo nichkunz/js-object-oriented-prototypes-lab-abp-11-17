@@ -13,22 +13,11 @@ function BoardMember(name, homeState, training){
     return 'I like to help people'
   }
   BoardMember.prototype.releasePressStatement = function() {
-    return 'You can do that!'
+    return 'You will see great things from Scuber.'
   }
-  
-
-  this.releasePressStatement = function(){
-    return "You will see great things from Scuber."
+  BoardMember.prototype.sayHi = function() {
+    return `Hi, my name is ${this.name}. I am from ${this.homeState}, and I was trained in ${this.training}.`
   }
-  //
-  // this.sayHi = function(){
-  //   return `Hi, my name is ${this.name}. I am from ${this.homeState}, and I was trained in ${this.training}.`
-  // }
-}
-
-BoardMember.prototype.sayHi = function() {
-  return `Hi, my name is ${this.name}. I am from ${this.homeState}, and I was trained in ${this.training}.`
-}
 
 // User.prototype.sayHello = function() {
 //   console.log(`Hello everybody, my name is ${this.name}`);
